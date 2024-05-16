@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
   meta: '>=1.7.0 <2.0.0'
   webview_flutter: ^4.5.0
-  webview_flutter_android: ^3.16.0
-  webview_flutter_wkwebview: ^3.13.0
+  webview_flutter_android:
+  webview_flutter_wkwebview:
   url_launcher: ^6.2.2
   youtube_player_iframe_web:
 
