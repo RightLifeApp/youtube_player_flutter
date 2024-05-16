@@ -115,7 +115,7 @@ class _FullscreenYoutubePlayerState extends State<FullscreenYoutubePlayer> {
   @override
   Widget build(BuildContext context) {
     return BackButtonListener(
-      onBackButtonPressed: () {
+      onBackButtonPressed: () async {
         _controller.currentTime.then(
           (time) => Navigator.pop(context, time),
         );

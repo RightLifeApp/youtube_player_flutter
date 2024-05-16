@@ -203,7 +203,7 @@ class _FullScreenState extends State<_FullScreen> with WidgetsBindingObserver {
   Widget build(BuildContext context) {
     return BackButtonListener(
       onBackButtonPressed: () async {
-        await _handleFullScreenBackAction();
+        _handleFullScreenBackAction();
         return true;
       },
       child: widget.child,
