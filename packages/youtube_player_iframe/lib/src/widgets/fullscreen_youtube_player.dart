@@ -119,6 +119,7 @@ class _FullscreenYoutubePlayerState extends State<FullscreenYoutubePlayer> {
         _controller.currentTime.then(
           (time) => Navigator.pop(context, time),
         );
+        return true;
       },
       child: YoutubePlayer(
         controller: _controller,
