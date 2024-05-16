@@ -231,8 +231,7 @@ class _FullScreenState extends State<_FullScreen> with WidgetsBindingObserver {
         : SystemUiMode.edgeToEdge;
   }
 
-  void _handleFullScreenBackAction(bool didPop) {
-    if (didPop) return;
+  void _handleFullScreenBackAction() {
 
     if (mounted && widget.fullScreenOption.enabled) {
       YoutubePlayerControllerProvider.of(context).exitFullScreen();
